@@ -700,9 +700,9 @@ public class CapacitorUpdaterPlugin extends Plugin {
                     if (res.has("error")) {
                         call.reject(res.getString("error"));
                         return;
-                    } else if (res.has("message")) {
-                        call.reject(res.getString("message"));
-                        return;
+//                     } else if (res.has("message")) {
+//                         call.reject(res.getString("message"));
+//                         return;
                     } else {
                         call.resolve(res);
                     }
